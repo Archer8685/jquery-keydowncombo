@@ -16,7 +16,7 @@ $(function() {
 ## API
 - `JQuery.KeyDownCombo.keys` <br/>keycode or words(igrone case)
 
-## Options
+### Options
 - `delayTime` <br/>Deytime between two key down time.
 - `limitType` <br/>[default: none, 1: only numbers, 2: only words, 3: Only numbers and words]
 - `igrone` <br/>keycode or words(igrone case)
