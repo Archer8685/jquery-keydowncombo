@@ -2,7 +2,7 @@ KeyDownCombo v1.0
 ============
 
 ## News
-/17/04/2014:release.
+17/04/2014:release.
 
 ## How to Use It
 ``` javascript
@@ -20,7 +20,7 @@ $(function() {
 - `delayTime` <br/>Deytime between two key down time.
 - `limitType` <br/>[default: none, 1: only numbers, 2: only words, 3: Only numbers and words]
 - `igrone` <br/>keycode or words(igrone case)
-- 
+
 ### Events
 - `onTimeOutError` <br/>When out key down delay time.
 - `onKeyError` <br/>When key down wrong key.
