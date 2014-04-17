@@ -14,6 +14,7 @@ $(function() {
 });
 ```
 ## API
+### Required
 - `JQuery.KeyDownCombo.keys` <br/>keycode or words(igrone case)
 
 ### Options
