@@ -6,11 +6,8 @@ KeyDownCombo v1.0
 
 ## How to Use It
 ``` javascript
-$(function() {
-  var list = [38, 38, 40, 40, 37, 39, 37, 39, "B", "A"];
-  $(document).KeyDownCombo({ 
-      keys: list
-  });
+$(document).KeyDownCombo({ 
+    keys: [38, 38, 40, 40, 37, 39, 37, 39, "B", "A"]
 });
 ```
 ## API
