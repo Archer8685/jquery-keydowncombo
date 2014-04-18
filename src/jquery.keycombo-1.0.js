@@ -4,7 +4,7 @@
  * @description jQuery KeyDown Combo Plugin
  * @version     1.0.0
  * @author      Archer Hsieh
- * @date        2013/07/09
+ * @date        2014/04/18
  *
  * @copyright Copyright 2013 Archer Hsieh, all rights reserved.
  */
