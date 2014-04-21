@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Jquery-keydowncombo by Archer8685</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Jquery-keydowncombo</h1>
+        <h2>keydown combo event.</h2>
+        <a href="https://github.com/Archer8685/jquery-keydowncombo" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="keydowncombo-v10" class="anchor" href="#keydowncombo-v10"><span class="octicon octicon-link"></span></a>KeyDownCombo v1.0</h1>
+
+<h2>
+<a name="demos--examples" class="anchor" href="#demos--examples"><span class="octicon octicon-link"></span></a>Demos &amp; Examples</h2>
+
+<p><a href="http://archerhsieh.webuda.com/jquery-keydowncombo/examples/">Demos</a></p>
+
+<h2>
+<a name="news" class="anchor" href="#news"><span class="octicon octicon-link"></span></a>News</h2>
+
+<p>17/04/2014:release.</p>
+
+<h2>
+<a name="how-to-use-it" class="anchor" href="#how-to-use-it"><span class="octicon octicon-link"></span></a>How to Use It</h2>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">KeyDownCombo</span><span class="p">({</span> 
+    <span class="nx">keys</span><span class="o">:</span> <span class="p">[</span><span class="mi">38</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">37</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="mi">37</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="s2">"B"</span><span class="p">,</span> <span class="s2">"A"</span><span class="p">]</span>
+<span class="p">});</span>
+</pre></div>
+
+<h2>
+<a name="api" class="anchor" href="#api"><span class="octicon octicon-link"></span></a>API</h2>
+
+<h3>
+<a name="required" class="anchor" href="#required"><span class="octicon octicon-link"></span></a>Required</h3>
+
+<ul>
+<li>
+<code>JQuery.KeyDownCombo.keys</code> <br>keycode or words(igrone case)</li>
+</ul><h3>
+<a name="options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a>Options</h3>
+
+<ul>
+<li>
+<code>delayTime</code> <br>Deytime between two key down time.</li>
+<li>
+<code>limitType</code> <br>[default: none, 1: only numbers, 2: only words, 3: Only numbers and words]</li>
+<li>
+<code>igrone</code> <br>keycode or words(igrone case)</li>
+</ul><h3>
+<a name="events" class="anchor" href="#events"><span class="octicon octicon-link"></span></a>Events</h3>
+
+<ul>
+<li>
+<code>onTimeOutError</code> <br>When out key down delay time.</li>
+<li>
+<code>onKeyError</code> <br>When key down wrong key.</li>
+<li>
+<code>onSuccess</code> <br>When key down right key.</li>
+<li>
+<code>onComplete</code> <br>When combo is done.</li>
+</ul><h2>
+<a name="keycode-comparison-table" class="anchor" href="#keycode-comparison-table"><span class="octicon octicon-link"></span></a>KeyCode Comparison Table</h2>
+
+<table>
+<thead><tr>
+<th>KeyCode</th>
+<th align="center">Word</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>8</td>
+<td align="center">Backspace</td>
+</tr>
+<tr>
+<td>9</td>
+<td align="center">Tab</td>
+</tr>
+<tr>
+<td>13</td>
+<td align="center">Enter</td>
+</tr>
+<tr>
+<td>16</td>
+<td align="center">Shift</td>
+</tr>
+<tr>
+<td>17</td>
+<td align="center">Ctrl</td>
+</tr>
+<tr>
+<td>18</td>
+<td align="center">Alt</td>
+</tr>
+<tr>
+<td>19</td>
+<td align="center">Pause</td>
+</tr>
+<tr>
+<td>20</td>
+<td align="center">CapsLock</td>
+</tr>
+<tr>
+<td>27</td>
+<td align="center">Esc</td>
+</tr>
+<tr>
+<td>32</td>
+<td align="center">Space</td>
+</tr>
+<tr>
+<td>33</td>
+<td align="center">PageUp</td>
+</tr>
+<tr>
+<td>34</td>
+<td align="center">PageDown</td>
+</tr>
+<tr>
+<td>35</td>
+<td align="center">End</td>
+</tr>
+<tr>
+<td>36</td>
+<td align="center">Home</td>
+</tr>
+<tr>
+<td>37</td>
+<td align="center">leftArrow</td>
+</tr>
+<tr>
+<td>38</td>
+<td align="center">upArrow</td>
+</tr>
+<tr>
+<td>39</td>
+<td align="center">rightArrow</td>
+</tr>
+<tr>
+<td>40</td>
+<td align="center">downArrow</td>
+</tr>
+<tr>
+<td>45</td>
+<td align="center">Insert</td>
+</tr>
+<tr>
+<td>46</td>
+<td align="center">Delete</td>
+</tr>
+<tr>
+<td>48</td>
+<td align="center">Zero</td>
+</tr>
+<tr>
+<td>49</td>
+<td align="center">One</td>
+</tr>
+<tr>
+<td>50</td>
+<td align="center">Two</td>
+</tr>
+<tr>
+<td>51</td>
+<td align="center">Three</td>
+</tr>
+<tr>
+<td>52</td>
+<td align="center">Four</td>
+</tr>
+<tr>
+<td>53</td>
+<td align="center">Five</td>
+</tr>
+<tr>
+<td>54</td>
+<td align="center">Six</td>
+</tr>
+<tr>
+<td>55</td>
+<td align="center">Seven</td>
+</tr>
+<tr>
+<td>56</td>
+<td align="center">Eight</td>
+</tr>
+<tr>
+<td>57</td>
+<td align="center">Nine</td>
+</tr>
+<tr>
+<td>65</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td>66</td>
+<td align="center">B</td>
+</tr>
+<tr>
+<td>67</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td>68</td>
+<td align="center">D</td>
+</tr>
+<tr>
+<td>69</td>
+<td align="center">E</td>
+</tr>
+<tr>
+<td>70</td>
+<td align="center">F</td>
+</tr>
+<tr>
+<td>71</td>
+<td align="center">G</td>
+</tr>
+<tr>
+<td>72</td>
+<td align="center">H</td>
+</tr>
+<tr>
+<td>73</td>
+<td align="center">I</td>
+</tr>
+<tr>
+<td>74</td>
+<td align="center">J</td>
+</tr>
+<tr>
+<td>75</td>
+<td align="center">K</td>
+</tr>
+<tr>
+<td>76</td>
+<td align="center">L</td>
+</tr>
+<tr>
+<td>77</td>
+<td align="center">M</td>
+</tr>
+<tr>
+<td>78</td>
+<td align="center">N</td>
+</tr>
+<tr>
+<td>79</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td>80</td>
+<td align="center">P</td>
+</tr>
+<tr>
+<td>81</td>
+<td align="center">Q</td>
+</tr>
+<tr>
+<td>82</td>
+<td align="center">R</td>
+</tr>
+<tr>
+<td>83</td>
+<td align="center">S</td>
+</tr>
+<tr>
+<td>84</td>
+<td align="center">T</td>
+</tr>
+<tr>
+<td>85</td>
+<td align="center">U</td>
+</tr>
+<tr>
+<td>86</td>
+<td align="center">V</td>
+</tr>
+<tr>
+<td>87</td>
+<td align="center">W</td>
+</tr>
+<tr>
+<td>88</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td>89</td>
+<td align="center">Y</td>
+</tr>
+<tr>
+<td>90</td>
+<td align="center">Z</td>
+</tr>
+<tr>
+<td>96</td>
+<td align="center">Numpad0</td>
+</tr>
+<tr>
+<td>97</td>
+<td align="center">Numpad1</td>
+</tr>
+<tr>
+<td>98</td>
+<td align="center">Numpad2</td>
+</tr>
+<tr>
+<td>99</td>
+<td align="center">Numpad3</td>
+</tr>
+<tr>
+<td>100</td>
+<td align="center">Numpad4</td>
+</tr>
+<tr>
+<td>101</td>
+<td align="center">Numpad5</td>
+</tr>
+<tr>
+<td>102</td>
+<td align="center">Numpad6</td>
+</tr>
+<tr>
+<td>103</td>
+<td align="center">Numpad7</td>
+</tr>
+<tr>
+<td>104</td>
+<td align="center">Numpad8</td>
+</tr>
+<tr>
+<td>105</td>
+<td align="center">Numpad9</td>
+</tr>
+<tr>
+<td>106</td>
+<td align="center">Multiply</td>
+</tr>
+<tr>
+<td>107</td>
+<td align="center">Plus</td>
+</tr>
+<tr>
+<td>109</td>
+<td align="center">Minut</td>
+</tr>
+<tr>
+<td>110</td>
+<td align="center">Dot</td>
+</tr>
+<tr>
+<td>111</td>
+<td align="center">Slash</td>
+</tr>
+<tr>
+<td>112</td>
+<td align="center">F1</td>
+</tr>
+<tr>
+<td>113</td>
+<td align="center">F2</td>
+</tr>
+<tr>
+<td>114</td>
+<td align="center">F3</td>
+</tr>
+<tr>
+<td>115</td>
+<td align="center">F4</td>
+</tr>
+<tr>
+<td>116</td>
+<td align="center">F5</td>
+</tr>
+<tr>
+<td>117</td>
+<td align="center">F6</td>
+</tr>
+<tr>
+<td>118</td>
+<td align="center">F7</td>
+</tr>
+<tr>
+<td>119</td>
+<td align="center">F8</td>
+</tr>
+<tr>
+<td>120</td>
+<td align="center">F9</td>
+</tr>
+<tr>
+<td>121</td>
+<td align="center">F10</td>
+</tr>
+<tr>
+<td>122</td>
+<td align="center">F11</td>
+</tr>
+<tr>
+<td>123</td>
+<td align="center">F12</td>
+</tr>
+<tr>
+<td>144</td>
+<td align="center">NumLock</td>
+</tr>
+<tr>
+<td>145</td>
+<td align="center">ScrollLock</td>
+</tr>
+<tr>
+<td>186</td>
+<td align="center">Semicolon</td>
+</tr>
+<tr>
+<td>187</td>
+<td align="center">Equals</td>
+</tr>
+<tr>
+<td>188</td>
+<td align="center">Comma</td>
+</tr>
+<tr>
+<td>189</td>
+<td align="center">Minus</td>
+</tr>
+<tr>
+<td>190</td>
+<td align="center">Period</td>
+</tr>
+<tr>
+<td>191</td>
+<td align="center">Slash</td>
+</tr>
+<tr>
+<td>192</td>
+<td align="center">BackTick</td>
+</tr>
+<tr>
+<td>219</td>
+<td align="center">LeftBrackets</td>
+</tr>
+<tr>
+<td>220</td>
+<td align="center">BackSlash</td>
+</tr>
+<tr>
+<td>221</td>
+<td align="center">RightBrackets</td>
+</tr>
+<tr>
+<td>222</td>
+<td align="center">Apostrophe</td>
+</tr>
+</tbody>
+</table><h2>
+<a name="about" class="anchor" href="#about"><span class="octicon octicon-link"></span></a>About</h2>
+
+<p>author:Archer Hsieh<br>
+e-mail: <a href="mailto:kevin8685@gmail.com">kevin8685@gmail.com</a></p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/Archer8685/jquery-keydowncombo/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/Archer8685/jquery-keydowncombo/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/Archer8685/jquery-keydowncombo"></a> is maintained by <a href="https://github.com/Archer8685">Archer8685</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
