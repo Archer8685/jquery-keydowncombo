@@ -125,5 +125,5 @@ $(document).KeyDownCombo({
 | 221 | RightBrackets |
 | 222 | Apostrophe |
 ## About
-author:Archer<br/>
+author:Archer Hsieh<br/>
 e-mail: kevin8685@gmail.com
