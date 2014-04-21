@@ -1,5 +1,7 @@
 KeyDownCombo v1.0
 ============
+##Demos & Examples
+[Demos](http://archerhsieh.webuda.com/jquery-keydowncombo/examples/)
 
 ## News
 17/04/2014:release.
