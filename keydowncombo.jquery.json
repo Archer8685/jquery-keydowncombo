@@ -1,6 +1,6 @@
 {
   "name": "keydowncombo",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "title": "KeyDownCombo",
   "description": "A jQuery plugin that add keydown combo event.",
   "keywords": [
@@ -8,7 +8,9 @@
     "plugin",
     "keydown",
     "combo",
-    "key"
+    "key",
+    "keypress",
+    "event"
   ],
   "homepage": "https://github.com/Archer8685/jquery-keydowncombo",
   "author": {
