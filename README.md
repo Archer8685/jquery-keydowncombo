@@ -1,4 +1,4 @@
-KeyDownCombo v1.0
+KeyDownCombo v0.1.0
 ============
 ##Demos & Examples
 [Demos](http://archerhsieh.webuda.com/jquery-keydowncombo/examples/)
