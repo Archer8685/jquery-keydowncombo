@@ -1,4 +1,4 @@
-KeyDownCombo v0.1.0
+KeyDownCombo v0.1.1
 ============
 ##Demos & Examples
 [Demos](http://archerproxyserver.appspot.com/jquery-keydowncombo/examples/index.html)
