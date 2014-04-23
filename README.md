@@ -1,7 +1,7 @@
 KeyDownCombo v0.1.0
 ============
 ##Demos & Examples
-[Demos](http://archerhsieh.webuda.com/jquery-keydowncombo/examples/)
+[Demos](http://archerproxyserver.appspot.com/jquery-keydowncombo/examples/index.html)
 
 ## News
 17/04/2014:release.
