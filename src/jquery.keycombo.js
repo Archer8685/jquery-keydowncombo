@@ -13,7 +13,7 @@
   /**
    * DeBug Log
    */
-  var _canLog = true;
+  var _canLog = false;
 
   function _log(mode, msg) {
   

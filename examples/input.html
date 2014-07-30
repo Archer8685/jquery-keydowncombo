@@ -2,71 +2,46 @@
 <html>
 <head>
     <title>KeyDown Combo jQuery Plugin</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" language="javascript" src="../jquery/jquery-1.9.1.js"></script>
     <script type="text/javascript" language="javascript" src="../src/jquery.keycombo.js"></script>
     
+    <link rel="stylesheet" type="text/css" href="example.css" />
     <script type="text/javascript">
         $(function() {
           $("#input").KeyDownCombo({
-              keys: ["Q", "W", "E", "R"], //組合的Key (Number or String)
-              igrone: [17], //要忽略的Key
+              keys: ["Q", "W", "E", "R"],
+              igrone: [17],
               limitType: 3,
-              delayTime: 1500, //輸入的延遲時間
-              onTimeOutError: function(pressTimes, diffTime) { //輸入逾時時觸發
-                  if (pressTimes == 1) $("#command").append("<br/>");
-                  $("#command").append("<span class='red'>(onTimeOutError)</span> <span cloass='white'>Press Times: <span class='blue'>"
-                  +  pressTimes + "</span>, Over Time: <span class='blue'>"
-                  + diffTime + "ms</span><br/>");
-              },
-              onKeyError: function(pressTimes, keyCode) { //輸入錯誤時觸發
-                  if (pressTimes == 1) $("#command").append("<br/>");
-                  $("#command").append("<span class='red'>(onKeyError)</span> Press Times: <span class='blue'>"
-                  +  pressTimes + "</span>, Error Key Code: <span class='blue'>" + keyCodeToStr(keyCode) + "</span><br/>");
-              },
-              onSuccess: function(pressTimes, keyCode, diffTime) { //輸入成功觸發時觸發
-                  if (pressTimes == 1) $("#command").append("<br/>");
-                  $("#command").append("<span class='green'>(onSuccess)</span> Press Times: <span class='blue'>" + 
-                  pressTimes + "</span>, Key Code: <span class='blue'>" + keyCodeToStr(keyCode) + "</span>, Spend Time: <span class='blue'>"
-                  + diffTime + "ms</span><br/>");
-              },
-              onComplete: function(totalTime) { //輸入成功並完成時觸發
-                  $("#command").append("<span class='green'>(onComplete)</span> Total Times: <span class='blue'>" + 
-                  totalTime + "ms</span><br/>");
-                  alert("Pass!!");
-              }
-          });
-          
-          $("#clearBtn").bind("click", function(e) {
-              $("#command").html("");
+              delayTime: 1500,
+              onComplete: function() { alert("success!"); } 
           });
         });
     </script>
-    <style type="text/css">
-      .red { 
-        color: #FF0000;
-        width: 120px;
-        display: inline-block;
-      }
-      .green { 
-        color: #00FF00;
-        width: 120px;
-        display: inline-block;
-      }
-      .blue { color: #0000FF; }
-      #clearBtn { margin-left: 40px; }
-    </style>
 </head>
 <body>
-  <div id="wrapper">
+  <div class="wrapper">
     <div id="main">
-        <h3>Please Key Press In Input</h3>
-        Command: <span class="blue">QWER</span><br/>
-        DeayTime: <span class="blue">1.5s</span>
-        <input id="clearBtn" type="button" value="Clear Log" /><br/>
-        <input id="input" type="text" value="" size="25" />
-        <div id="command"></div>
-        <div style="margin-top:1em;">-- <a href="https://github.com/Archer8685" title="Archer Hsieh, front-end developer" target="_blank">Archer Hsieh</a></div>
+        <h2>Example</h2>
+        <div class="block">
+          <h3>Input<h3>
+          <h4>press these keys on input</h4>
+          Command: <span class="keys">QWER</span><br/>
+          DeayTime: <span class="keys">1.5s</span>
+          <div><input id="input" type="text" value="" size="25" /></div>
+              <pre>
+$("#input").KeyDownCombo({
+    keys: ["Q", "W", "E", "R"],
+    igrone: [17],
+    limitType: 3,
+    delayTime: 1500,
+    onComplete: function() { alert("success!"); } 
+});</pre>
+        </div>
+        <div class="back">
+          <a href="index.html">Back</a>
+        </div>
+        <div class="author">-- <a href="https://github.com/Archer8685" title="Archer Hsieh, front-end developer" target="_blank">Archer Hsieh</a></div>
     </div>
   </div>
 </body>
