@@ -204,13 +204,13 @@
     }
   };
 
-  $.fn.KeyDownCombo = function(methodOrOptions) {
+  $.fn.keyDownCombo = function(methodOrOptions) {
       if ( methods[methodOrOptions] ) { //執行選項
           return methods[ methodOrOptions ].apply( this, Array.prototype.slice.call( arguments, 1 ));
       } else if ( typeof methodOrOptions === 'object' || ! methodOrOptions ) { //初始化
           return methods.init.apply( this, arguments );
       } else {
-          $.error( 'Method ' +  methodOrOptions + ' does not exist on jQuery.KeyDownCombo' );
+          $.error( 'Method ' +  methodOrOptions + ' does not exist on jQuery.keyDownCombo' );
       }   
   };
     

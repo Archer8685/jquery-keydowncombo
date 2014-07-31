@@ -1,4 +1,4 @@
-KeyDownCombo v0.1.3
+KeyDownCombo v0.1.4
 ============
 ##Demos & Examples
 [Demos](http://archerproxyserver.appspot.com/jquery-keydowncombo/examples/index.html)
@@ -8,13 +8,13 @@ KeyDownCombo v0.1.3
 
 ## How to Use It
 ``` javascript
-$(document).KeyDownCombo({ 
+$(document).keyDownCombo({ 
     keys: [38, 38, 40, 40, 37, 39, 37, 39, "B", "A"]
 });
 ```
 ## API
 ### Required
-- `JQuery.KeyDownCombo.keys` <br/>keycode or words(igrone case)
+- `keys` <br/>keycode or words(igrone case)
 
 ### Options
 - `delayTime` <br/>Deytime between two key down time.
