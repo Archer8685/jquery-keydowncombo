@@ -14,7 +14,9 @@
               igrone: [17],
               limitType: 3,
               delayTime: 1500,
-              onComplete: function() { alert("success!"); } 
+              onComplete: function() { alert("success!"); },
+              onTimeOutError: function() { alert("timeout"); },
+              onKeyError: function() { alert("fail!please retry."); }
           });
         });
     </script>
@@ -34,7 +36,9 @@ $("#input").keyDownCombo({
     igrone: [17],
     limitType: 3,
     delayTime: 1500,
-    onComplete: function() { alert("success!"); } 
+    onComplete: function() { alert("success!"); },
+    onTimeOutError: function() { alert("timeout"); },
+    onKeyError: function() { alert("fail!please retry."); }
 });</pre>
         </div>
         <div class="back">

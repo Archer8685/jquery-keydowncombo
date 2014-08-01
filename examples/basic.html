@@ -12,7 +12,9 @@
           var list = [38, 38, 40, 40, 37, 39, 37, 39, "B", "A"];
           $(document).keyDownCombo({ 
               keys: list,
-              onComplete: function() { alert("success!"); } 
+              onComplete: function() { alert("success!"); } ,
+              onTimeOutError: function() { alert("timeout"); },
+              onKeyError: function() { alert("fail!please retry."); }
           });
         });
     </script>
@@ -28,7 +30,9 @@
 var list = [38, 38, 40, 40, 37, 39, 37, 39, "B", "A"];
 $(document).keyDownCombo({ 
     keys: list,
-    onComplete: function() { alert("pass"); } 
+    onComplete: function() { alert("success!"); } ,
+    onTimeOutError: function() { alert("timeout"); },
+    onKeyError: function() { alert("fail!please retry."); }
 });</pre>
     </div>
     <div class="back">

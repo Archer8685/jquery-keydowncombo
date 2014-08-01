@@ -1,4 +1,4 @@
-KeyDownCombo v0.1.4
+KeyDownCombo v0.1.5
 ============
 ##Demos & Examples
 [Demos](http://archerproxyserver.appspot.com/jquery-keydowncombo/examples/index.html)
@@ -17,7 +17,7 @@ $(document).keyDownCombo({
 - `keys` <br/>keycode or words(igrone case)
 
 ### Options
-- `delayTime` <br/>Deytime between two key down time.
+- `delayTime` <br/>[default: no limit]Deytime between two key down time.
 - `limitType` <br/>[default: none, 1: only numbers, 2: only words, 3: Only numbers and words]
 - `igrone` <br/>keycode or words(igrone case)
 
